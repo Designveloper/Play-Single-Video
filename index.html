@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>
+    body {
+      background: black;
+    }
+    .canvas-image, .canvas-subtile {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+    .canvas-video {
+      margin: 0 auto;
+      text-align: center;
+    }
+    #img, #video {
+      display: none;
+    }
+    </style>
+  </head>
+
+  <!-- <body onload="processor.doLoad()"> -->
+  <body>
+    <div>
+      <video autoplay id="video" src="http://media.w3.org/2010/05/sintel/trailer.mp4" controls="true"/>
+    </div>
+    <div class="canvas-image">
+      <canvas id="image" width="160" height="96"/>
+    </div>
+    <div class="canvas-subtile">
+      <canvas id="subtitle" width="160" height="96"/>
+    </div>
+    <div class="canvas-video">
+      <canvas id="canvas" width="160" height="96"/>
+    </div>
+    <img id="img" width="220" height="277" src="home.svg" alt="The Scream">
+  </body>
+  <script type="text/javascript" src="./main.js"></script>
+</html>

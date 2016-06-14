@@ -1,6 +1,10 @@
 body {
   background: black;
 }
+body * {
+  color: #fff;
+  font-family: "Airal", sans-serif;
+}
 .canvas-image, .canvas-subtile {
   position: absolute;
   text-align: center;
@@ -12,4 +16,11 @@ body {
 }
 #img, #video {
   display: none;
+}
+.speed-control {
+  text-align: center;
+}
+.speed-control select {
+  width: 100px;
+  margin-left: 10px;
 }

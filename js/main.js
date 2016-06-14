@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   video.addEventListener('play', function() {
    var $this = this;
-   video.playbackRate = 1;
+  //  video.playbackRate = 1;
    img.style.display = "none";
    video.style.display = "none";
    setTimeout(function(){
@@ -46,3 +46,9 @@ document.addEventListener('DOMContentLoaded', function(){
    })();
   }, 0);
 },false);
+
+function chooseSpeed() {
+  var speed = document.getElementById("speed-control").value;
+  var video = document.getElementById('video');
+  video.playbackRate = speed;
+};

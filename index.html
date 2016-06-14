@@ -18,6 +18,17 @@
     <div class="canvas-video">
       <canvas id="canvas" width="160" height="96"/>
     </div>
+    <div class="speed-control">
+      <label>Speed Control</label>
+      <select id="speed-control" onchange="chooseSpeed()">
+        <option value="1">Speed</option>
+        <option value="0.5">0.5x</option>
+        <option value="1">1x</option>
+        <option value="2">2x</option>
+        <option value="5">5x</option>
+        <option value="10">10x</option>
+      </select>
+    </div>
     <img id="img" width="220" height="277" src="public/home.svg" alt="House" />
   </body>
   <script type="text/javascript" src="js/main.js"></script>
